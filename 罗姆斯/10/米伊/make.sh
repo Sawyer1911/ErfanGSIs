@@ -19,11 +19,11 @@ echo "persist.vendor.sys.fp.fod.size.width_height=190,190" >> $1/build.prop
 echo "DEVICE_PROVISIONED=1" >> $1/build.prop
 
 # drop dirac
-rm -rf $1/priv-app/DiracAudioControlService
+#rm -rf $1/priv-app/DiracAudioControlService
 # drop FingerprintExtensionService
-rm -rf $1/app/FingerprintExtensionService
+#rm -rf $1/app/FingerprintExtensionService
 # drop nfc
-rm -rf $1/app/NQNfcNci
+#rm -rf $1/app/NQNfcNci
 
 cat $thispath/rw-system.add.sh >> $1/bin/rw-system.sh
 
